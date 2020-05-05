@@ -1,0 +1,27 @@
+ui_print(" ");
+ui_print("+-------------------------------------+");
+ui_print("|   Enable Multiple Users Accounts    |");
+ui_print("|                                     |");
+ui_print("|           Author: bagbyte           |");
+ui_print("+-------------------------------------+");
+ui_print(" ");
+
+ui_print("*** Setting up resources");
+ui_print(" ");
+run_program("/sbin/umount", "/system");
+assert(run_program("/sbin/mount", "/system") == 0);
+assert(is_mounted("/system"));
+
+assert(package_extract_file("build_prop.sh", "/tmp/build_prop.sh") == "t");
+set_perm(0, 0, 0755, "/tmp/build_prop.sh");
+
+ui_print("*** Applying changes to build.prop");
+ui_print(" ");
+assert(run_program("/tmp/build_prop.sh") == 0);
+delete("/tmp/build_prop.sh");
+
+show_progress(0.100000, 0);
+run_program("/sbin/umount", "/system");
+ui_print("Done.");
+ui_print("Ready to reboot.");
+ui_print(" ");

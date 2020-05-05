@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+
+Name: build_prop.sh
+SHA1-Digest: BibQL1n0tnweqXcNAulZqopRjjY=
+
+Name: META-INF/com/google/android/update-binary
+SHA1-Digest: 7LjhI2kUKoWfvQFHyInm+pcJigY=
+
+Name: META-INF/com/google/android/updater-script
+SHA1-Digest: rkW22xzAOMAdlVn/tpwF93INDL8=
