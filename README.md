@@ -8,7 +8,7 @@ Based on this [article](https://beebom.com/how-enable-multiple-user-accounts-any
 
 ## How to use it
 
-First download the enabler.zip cloning this repository or directly from [here](https://raw.githubusercontent.com/bagbyte/android-enable-multiple-users/master/enabler.zip).
+First download the `enabler.zip` cloning this repository or directly from [here](https://raw.githubusercontent.com/bagbyte/android-enable-multiple-users/master/enabler.zip).
 
 Put your Android phone in recovery mode (following the instruction of your specific device), or
 using adb:
